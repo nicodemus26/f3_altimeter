@@ -1,24 +1,28 @@
-# `lsm303dlhc`
+# `mpl3115a2`
 
-> A platform agnostic driver to interface with the LSM303DLHC (accelerometer + compass)
+> A platform agnostic driver to interface with the Freescale Semiconductor/NXP MPL3115A2 (barometer + altimeter + thermometer)
 
 ## What works
 
-- Reading the accelerometer
-- Reading the compass and temperature sensor
+- Nothing
 
 ## TODO
 
+- [ ] Get a basic barometer reading using polling
+- [ ] Get a basic altimeter reading using polling
+- [ ] Get a basic temperature reading using polling
 - [ ] Make sure this works with the `i2cdev` crate (i.e. with the Raspberry Pi)
-- [ ] Configuration. e.g. selecting the accelerometer / compass sensing range / sensitivity.
-- [ ] How to make the API compatible with device specific features like DMA and interrupts?
-- ???
+- [ ] Advanced configuration of the sensors
+- [ ] Interrupt-mode
 
 ## Examples
 
-You should find at least one example in the [f3] crate.
+There is a reference use project at
+https://github.com/nicodemus26/f3_altimeter which uses this
+sensor connected to an STM32F3DISCOVERY board.
 
-[f3]: https://docs.rs/f3/~0.5
+## References
+Datasheet https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf
 
 ## License
 
