@@ -11,15 +11,16 @@
 # will likely look very different (and much more reasonable)
 
 [package]
-name = "lsm303dlhc"
-version = "0.2.0"
-authors = ["Jorge Aparicio <jorge@japaric.io>"]
-description = "A platform agnostic driver to interface with the LSM303DLHC (accelerometer + compass)"
-documentation = "https://docs.rs/lsm303dlhc"
-keywords = ["embedded-hal-driver", "accelerometer", "compass", "MEMS"]
+name = "mpl3115a2"
+version = "0.1.0"
+authors = ["Nicodemus Paradiso <nicodemus26@gmail.com>"]
+description = "A platform agnostic driver to interface with the MPL3115A2 (barmoeter + altimeter + thermometer)"
+documentation = "https://docs.rs/mpl3115a2"
+keywords = ["embedded-hal-driver", "barometer", "altimeter", "thermometer", "MEMS"]
 categories = ["embedded", "hardware-support", "no-std"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/japaric/lsm303dlhc"
+repository = "https://github.com/nicodemus26/mpl3115a2"
+
 [dependencies.cast]
 version = "0.2.2"
 default-features = false
